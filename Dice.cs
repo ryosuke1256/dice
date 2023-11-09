@@ -1,8 +1,8 @@
 using System;
 
-namespace source {
+namespace Source {
   class Program {
-    public static void Main(string[] args) {
+    private static void Main(string[] args) {
       Dice dice = new Dice();
       int diceNumber = dice.Throw();
       Console.WriteLine($"Dice number is {diceNumber}");
@@ -10,9 +10,14 @@ namespace source {
   }
 
   class Dice {
+    private readonly Random random;
+
+    public Dice() {
+      random = new Random();
+    }
+
     public int Throw() {
-      Random rand = new Random();
-      return rand.Next(1, 7);
+      return random.Next(1, 7);
     }
   }
 }

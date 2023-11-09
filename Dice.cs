@@ -5,7 +5,7 @@ namespace source {
     public static void Main(string[] args) {
       Dice dice = new Dice();
       int diceNumber = dice.Throw();
-      Console.WriteLine($"dice number is {diceNumber}");
+      Console.WriteLine($"Dice number is {diceNumber}");
     }
   }
 

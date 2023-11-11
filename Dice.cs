@@ -3,7 +3,7 @@ using System;
 namespace Source {
   class Program {
     private static void Main(string[] args) {
-      Dice dice = new Dice();
+      var dice = new Dice();
       int diceNumber = dice.Throw();
       Console.WriteLine($"Dice number is {diceNumber}");
     }

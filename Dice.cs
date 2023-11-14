@@ -4,7 +4,7 @@ namespace Source {
   class Program {
     private static void Main(string[] args) {
       var dice = new Dice();
-      int diceNumber = dice.Throw();
+      int diceNumber = dice.Roll();
       Console.WriteLine($"Dice number is {diceNumber}");
     }
   }
@@ -16,7 +16,7 @@ namespace Source {
       random = new Random();
     }
 
-    public int Throw() {
+    public int Roll() {
       return random.Next(1, 7);
     }
   }
